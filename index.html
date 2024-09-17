@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>My Solution | Profile card component</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    :root {
+      --clr-Dark-cyan: hsl(185, 75%, 39%);
+      --clr-Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+      --clr-Dark-grayish-blue: hsl(227, 10%, 46%);
+      --clr-Dark-gray: hsl(0, 0%, 59%);
+      --ff1-font-family: "Kumbh Sans", sans-serif; /* Weights: 400, 700 */
+    }
+    body {
+      background: var(--clr-Dark-cyan);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .svg-one {
+      background: url("images/bg-pattern-card.svg");
+      width: 350px;
+      height: 140px;
+      border-radius: 0.5rem 0.5rem 0rem 0rem;
+    }
+    .back {
+      background: white;
+      width: 100%;
+      border-radius: 0rem 0rem 0.5rem 0.5rem;
+    }
+    .man {
+      margin-left: 35%;
+      position: relative;
+      top: -52px;
+      border-radius: 50%;
+      border: 5px solid white;
+    }
+    .heading {
+      position: relative;
+      top: -30px;
+      text-align: center;
+    }
+    .crest {
+      font-family: var(--ff1-font-family);
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+    .twenty-six {
+      color: var(--clr-Dark-gray);
+      font-weight: 400;
+      padding-left: 0.5rem;
+    }
+    .paragraph {
+      position: relative;
+      text-align: center;
+      top: -15px;
+    }
+    .London {
+      color: var(--clr-Dark-gray);
+      font-family: var(--ff1-font-family);
+      font-weight: 400;
+      font-size: 0.9rem;
+    }
+    .linia {
+      border: none;
+      height: 1px;
+      background-color: #ddd;
+      width: 100%;
+      margin-bottom: 2rem;
+      margin-top: 0.6rem;
+    }
+    .punkty {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .followers {
+      position: relative;
+      left: -50px;
+      padding-bottom: 2rem;
+    }
+    .likes {
+      position: relative;
+      padding-bottom: 2rem;
+      left: -8px;
+    }
+    .photos {
+      position: relative;
+      padding-bottom: 2rem;
+      left: 45px;
+    }
+    .eightk {
+      font-family: var(--ff1-font-family);
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+    .follow {
+      font-family: var(--ff1-font-family);
+      font-weight: 400;
+      color: var(--clr-Dark-gray);
+      font-size: 0.7rem;
+      letter-spacing: 2px;
+      position: relative;
+      left: -12px;
+    }
+    .eightthreek {
+      font-family: var(--ff1-font-family);
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+    .onek {
+      font-family: var(--ff1-font-family);
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+    .lik {
+      font-family: var(--ff1-font-family);
+      font-weight: 400;
+      color: var(--clr-Dark-gray);
+      font-size: 0.7rem;
+      letter-spacing: 2px;
+      position: relative;
+      left: 6px;
+    }
+    .photo {
+      font-family: var(--ff1-font-family);
+      font-weight: 400;
+      color: var(--clr-Dark-gray);
+      font-size: 0.7rem;
+      letter-spacing: 2px;
+      position: relative;
+      left: -5px;
+    }
+  </style>
+  <body>
+    <main class="wrapper">
+      <div class="svg-one"></div>
+      <aside class="back">
+        <div class="image-man">
+          <img src="./images/image-victor.jpg" alt="" class="man" />
+        </div>
+        <div class="heading">
+          <h3 class="crest">Victor Crest <span class="twenty-six">26</span></h3>
+        </div>
+        <div class="paragraph">
+          <p class="London">London</p>
+        </div>
+        <hr class="linia" />
+        <div class="punkty">
+          <div class="followers">
+            <h3 class="eightk">80K</h3>
+            <p class="follow">Followers</p>
+          </div>
+          <div class="likes">
+            <h3 class="eightthreek">803K</h3>
+            <p class="lik">Likes</p>
+          </div>
+          <div class="photos">
+            <h3 class="onek">1.4K</h3>
+            <p class="photo">Photos</p>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </body>
+</html>
